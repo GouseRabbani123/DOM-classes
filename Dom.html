@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="First">Gouse </p>
+    <p class="one">GR</p>
+    <p class="one">GR1</p>
+    <p class="one">GR2</p>
+    
+    <!-- How to aacess Get element by ID in js-->
+    <script>
+        // var a = document.getElementById("First").innerHTML;
+        // document.write(a);
+    </script>
+    
+    <!-- How to accessthe element by class -->
+    <script>
+        // var b =  document.getElementByClassName("one")[2].innerHTML;
+        //  document.write(b);
+         //it is manditory to give the index nnumbber if you are using the classes to get the output of the perticular class
+    </script>
+ 
+ <!-- How to accessthe element by Tag Name -->
+
+<script>
+    var c =  document.getElementByTagName("p");
+     document.write(c);
+     //it gets the whle data from the perticular tag name from the entitr document.
+</script>
+
+<!-- How to access only the first element and get the value of that first element from the document thn use "Query Selector"
+ -->
+<script>
+    var p = document.querySelector('p').innerHTML;
+    document.write(p);
+    //it gets only the first element value from the n number of elements from the entire document.
+</script>
+
+
+</body>
+</html>

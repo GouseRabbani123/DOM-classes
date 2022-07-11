@@ -1,0 +1,9 @@
+When a web page is loaded , the browser creates a document object model of the page.
+
+1.elements => <h1>example of element</h1>
+2.tags => <h1></h1> example of tag
+3.attribute => <img src="12mc" height="10">here src and height are the atributes.
+
+this elements , tags and attributes insdie the web page is called the Object.
+
+The tree structure of the page that is represented is called the model.

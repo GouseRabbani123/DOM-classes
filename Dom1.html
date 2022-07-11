@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="First"> Shahib</p>
+    <p classs="hero"> Sha</p>
+    <p classs="hero">shai</p>
+    <p classs="hero">sh</p>
+    <p classs="hero">abc</p>
+
+    <ul>
+        <li>Lke</li>
+        <li>Coment</li>
+        <li>share</li>
+    </ul>
+
+    <!-- Access the children of the body -->
+    <script>
+        var child = document.body.children;
+        console.log(child);
+        //gives all the child nodes that are presnt inside the body
+
+    </script>
+
+    <!-- Add New child element inside the body -->
+<script>
+    var para = document.createElement("p");//this line of code creates a paragraph tag inside the body
+    var textNode = document.createTextNode("this is how i create the para element text inside the tag");//this ine cretes a text inside the body
+    para.appendChild(textNode);//this line of code appends the text element insidee the para tag.
+    console.log(para);//here we gets the output like this   =><p> this is how i create the para element text inside the tag</p>
+//How to add this created element from the console to body.
+
+document.body.appendChild(para);//from this line we can append the para elemet inside the body child.
+
+
+</script>
+
+
+<!-- How to access the first and last child inside the document. -->
+<script>
+    var list = document.querySelector("ul");//gets only the ifrst element of ul
+
+    console.log(list);
+    //how to get the first child of that ul write this line of code
+    console.log(list.firstChild);//it gives the text as the first element "text" but there we dont see the text beuse there we can see empty space between the element and the child.
+    //because of like this
+    // <ul>all this empty space you need to get the concept gouse while you see it.
+    //     <li>like</li>
+    //     </ul> 
+
+    //FOR LAST CHILD
+    console.log(list.lastChild);
+
+
+    //SIBLINGS
+    var firstsiblings = First.nextElementSibling;//as here the first mens the id of the paragraph tag and its first sibling is this and output we get is also this " <p classs="hero"> Sha</p>"
+    console.log(firstsiblings); 
+    //if we need the second sibling of the element then write the same code like this
+    var secondsiblings = First.nextElementSibling.nextElementSibling;
+    console.log(secondsiblings);//gets this output     <p classs="hero">shai</p>
+
+console.log(list.parentNode);//gets the parent element of the list element which is the body. 
+
+</script>
+
+</body>
+
+</html>
